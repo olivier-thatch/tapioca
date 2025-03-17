@@ -454,12 +454,10 @@ module JsonApiClient::Helpers::Callbacks
   module GeneratedClassMethods
     def __callbacks; end
     def __callbacks=(value); end
-    def __callbacks?; end
   end
 
   module GeneratedInstanceMethods
     def __callbacks; end
-    def __callbacks?; end
   end
 end
 
@@ -990,6 +988,20 @@ class JsonApiClient::Paginating::Paginator
 
     # source://json_api_client//lib/json_api_client/paginating/paginator.rb#4
     def per_page_param?; end
+
+    private
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_page_param; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_page_param=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_per_page_param; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_per_page_param=(new_value); end
   end
 end
 
@@ -1394,11 +1406,8 @@ class JsonApiClient::Resource
   # source://json_api_client//lib/json_api_client/helpers/associatable.rb#9
   def __cached_associations=(_arg0); end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#70
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#69
   def __callbacks; end
-
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#70
-  def __callbacks?; end
 
   # source://json_api_client//lib/json_api_client/resource.rb#44
   def _immutable; end
@@ -1406,16 +1415,16 @@ class JsonApiClient::Resource
   # source://json_api_client//lib/json_api_client/resource.rb#44
   def _immutable?; end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#951
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#912
   def _run_validate_callbacks(&block); end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#963
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#924
   def _validate_callbacks; end
 
-  # source://activemodel/7.1.5.1/lib/active_model/validations.rb#71
+  # source://activemodel/8.0.2/lib/active_model/validations.rb#50
   def _validators; end
 
-  # source://activemodel/7.1.5.1/lib/active_model/validations.rb#71
+  # source://activemodel/8.0.2/lib/active_model/validations.rb#50
   def _validators?; end
 
   # source://json_api_client//lib/json_api_client/resource.rb#41
@@ -1494,8 +1503,8 @@ class JsonApiClient::Resource
   # source://json_api_client//lib/json_api_client/resource.rb#416
   def mark_as_persisted!; end
 
-  # source://activemodel/7.1.5.1/lib/active_model/naming.rb#255
-  def model_name(&block); end
+  # source://activemodel/8.0.2/lib/active_model/naming.rb#255
+  def model_name(&_arg0); end
 
   # Returns true if this is a new record (never persisted to the database)
   #
@@ -1504,7 +1513,7 @@ class JsonApiClient::Resource
   # source://json_api_client//lib/json_api_client/resource.rb#442
   def new_record?; end
 
-  # source://activemodel/7.1.5.1/lib/active_model/conversion.rb#32
+  # source://activemodel/8.0.2/lib/active_model/conversion.rb#32
   def param_delimiter=(_arg0); end
 
   # source://json_api_client//lib/json_api_client/resource.rb#568
@@ -1596,9 +1605,6 @@ class JsonApiClient::Resource
   # source://json_api_client//lib/json_api_client/resource.rb#481
   def valid?(context = T.unsafe(nil)); end
 
-  # source://activemodel/7.1.5.1/lib/active_model/validations.rb#67
-  def validation_context; end
-
   protected
 
   # source://json_api_client//lib/json_api_client/resource.rb#642
@@ -1655,18 +1661,12 @@ class JsonApiClient::Resource
   # source://json_api_client//lib/json_api_client/resource.rb#622
   def respond_to_missing?(symbol, include_all = T.unsafe(nil)); end
 
-  # source://activemodel/7.1.5.1/lib/active_model/validations.rb#67
-  def validation_context=(_arg0); end
-
   class << self
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#70
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#69
     def __callbacks; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#70
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#69
     def __callbacks=(value); end
-
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#70
-    def __callbacks?; end
 
     # source://json_api_client//lib/json_api_client/resource.rb#44
     def _immutable; end
@@ -1677,19 +1677,19 @@ class JsonApiClient::Resource
     # source://json_api_client//lib/json_api_client/resource.rb#44
     def _immutable?; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#955
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#916
     def _validate_callbacks; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#959
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#920
     def _validate_callbacks=(value); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/validations.rb#71
+    # source://activemodel/8.0.2/lib/active_model/validations.rb#50
     def _validators; end
 
-    # source://activemodel/7.1.5.1/lib/active_model/validations.rb#71
+    # source://activemodel/8.0.2/lib/active_model/validations.rb#50
     def _validators=(value); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/validations.rb#71
+    # source://activemodel/8.0.2/lib/active_model/validations.rb#50
     def _validators?; end
 
     # source://json_api_client//lib/json_api_client/resource.rb#41
@@ -1863,13 +1863,13 @@ class JsonApiClient::Resource
     # source://json_api_client//lib/json_api_client/resource.rb#21
     def paginator?; end
 
-    # source://activemodel/7.1.5.1/lib/active_model/conversion.rb#32
+    # source://activemodel/8.0.2/lib/active_model/conversion.rb#32
     def param_delimiter; end
 
-    # source://activemodel/7.1.5.1/lib/active_model/conversion.rb#32
+    # source://activemodel/8.0.2/lib/active_model/conversion.rb#32
     def param_delimiter=(value); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/conversion.rb#32
+    # source://activemodel/8.0.2/lib/active_model/conversion.rb#32
     def param_delimiter?; end
 
     # source://json_api_client//lib/json_api_client/resource.rb#21
@@ -2126,6 +2126,158 @@ class JsonApiClient::Resource
     #
     # source://json_api_client//lib/json_api_client/resource.rb#292
     def property(name, options = T.unsafe(nil)); end
+
+    private
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr___callbacks; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr___callbacks=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr__immutable; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr__immutable=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr__validators; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr__validators=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_add_defaults_to_changes; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_add_defaults_to_changes=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_associations; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_associations=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_connection_class; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_connection_class=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_connection_object; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_connection_object=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_connection_options; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_connection_options=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_custom_type_to_class; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_custom_type_to_class=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_json_key_format; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_json_key_format=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_keep_request_params; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_keep_request_params=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_linker; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_linker=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_paginator; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_paginator=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_param_delimiter; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_param_delimiter=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_parser; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_parser=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_primary_key; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_primary_key=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_query_builder; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_query_builder=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_raise_on_blank_find_param; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_raise_on_blank_find_param=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_read_only_attributes; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_read_only_attributes=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_relationship_linker; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_relationship_linker=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_request_params_class; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_request_params_class=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_requestor_class; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_requestor_class=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_route_format; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_route_format=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_search_included_in_result_set; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_search_included_in_result_set=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_site; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_site=(new_value); end
   end
 end
 

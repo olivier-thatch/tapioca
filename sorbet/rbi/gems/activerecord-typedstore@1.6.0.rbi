@@ -8,247 +8,253 @@
 # source://activerecord-typedstore//lib/active_record/typed_store.rb#5
 module ActiveRecord
   class << self
-    # source://activerecord/7.1.5.1/lib/active_record.rb#342
+    # source://activerecord/8.0.2/lib/active_record.rb#361
     def action_on_strict_loading_violation; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#342
+    # source://activerecord/8.0.2/lib/active_record.rb#361
     def action_on_strict_loading_violation=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#422
-    def allow_deprecated_singular_associations_name; end
+    # source://activerecord/8.0.2/lib/active_record.rb#527
+    def after_all_transactions_commit(&block); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#422
-    def allow_deprecated_singular_associations_name=(_arg0); end
+    # source://activerecord/8.0.2/lib/active_record.rb#547
+    def all_open_transactions; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#335
+    # source://activerecord/8.0.2/lib/active_record.rb#354
     def application_record_class; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#335
+    # source://activerecord/8.0.2/lib/active_record.rb#354
     def application_record_class=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#263
+    # source://activerecord/8.0.2/lib/active_record.rb#283
     def async_query_executor; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#263
+    # source://activerecord/8.0.2/lib/active_record.rb#283
     def async_query_executor=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#317
+    # source://activerecord/8.0.2/lib/active_record.rb#348
     def before_committed_on_all_records; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#317
+    # source://activerecord/8.0.2/lib/active_record.rb#348
     def before_committed_on_all_records=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#314
+    # source://activerecord/8.0.2/lib/active_record.rb#345
     def belongs_to_required_validates_foreign_key; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#314
+    # source://activerecord/8.0.2/lib/active_record.rb#345
     def belongs_to_required_validates_foreign_key=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#323
-    def commit_transaction_on_non_local_return; end
+    # source://activerecord/8.0.2/lib/active_record.rb#211
+    def database_cli; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#323
-    def commit_transaction_on_non_local_return=(_arg0); end
+    # source://activerecord/8.0.2/lib/active_record.rb#211
+    def database_cli=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#209
+    # source://activerecord/8.0.2/lib/active_record.rb#233
     def db_warnings_action; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#211
+    # source://activerecord/8.0.2/lib/active_record.rb#235
     def db_warnings_action=(action); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#236
+    # source://activerecord/8.0.2/lib/active_record.rb#262
     def db_warnings_ignore; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#236
+    # source://activerecord/8.0.2/lib/active_record.rb#262
     def db_warnings_ignore=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#192
+    # source://activerecord/8.0.2/lib/active_record.rb#214
     def default_timezone; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#196
+    # source://activerecord/8.0.2/lib/active_record.rb#218
     def default_timezone=(default_timezone); end
 
-    # source://activerecord/7.1.5.1/lib/active_record/deprecator.rb#4
+    # source://activerecord/8.0.2/lib/active_record/deprecator.rb#4
     def deprecator; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#177
+    # source://activerecord/8.0.2/lib/active_record.rb#182
     def disable_prepared_statements; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#177
+    # source://activerecord/8.0.2/lib/active_record.rb#182
     def disable_prepared_statements=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#476
+    # source://activerecord/8.0.2/lib/active_record.rb#510
     def disconnect_all!; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#382
+    # source://activerecord/8.0.2/lib/active_record.rb#409
     def dump_schema_after_migration; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#382
+    # source://activerecord/8.0.2/lib/active_record.rb#409
     def dump_schema_after_migration=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#392
+    # source://activerecord/8.0.2/lib/active_record.rb#419
     def dump_schemas; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#392
+    # source://activerecord/8.0.2/lib/active_record.rb#419
     def dump_schemas=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#465
+    # source://activerecord/8.0.2/lib/active_record.rb#499
     def eager_load!; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#361
+    # source://activerecord/8.0.2/lib/active_record.rb#380
     def error_on_ignored_order; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#361
+    # source://activerecord/8.0.2/lib/active_record.rb#380
     def error_on_ignored_order=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record/gem_version.rb#5
+    # source://activerecord/8.0.2/lib/active_record/gem_version.rb#5
     def gem_version; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#454
+    # source://activerecord/8.0.2/lib/active_record.rb#460
     def generate_secure_token_on; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#454
+    # source://activerecord/8.0.2/lib/active_record.rb#460
     def generate_secure_token_on=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#286
+    # source://activerecord/8.0.2/lib/active_record.rb#306
     def global_executor_concurrency; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#278
+    # source://activerecord/8.0.2/lib/active_record.rb#298
     def global_executor_concurrency=(global_executor_concurrency); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#266
+    # source://activerecord/8.0.2/lib/active_record.rb#286
     def global_thread_pool_async_query_executor; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#290
+    # source://activerecord/8.0.2/lib/active_record.rb#321
     def index_nested_attribute_errors; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#290
+    # source://activerecord/8.0.2/lib/active_record.rb#321
     def index_nested_attribute_errors=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#183
+    # source://activerecord/8.0.2/lib/active_record.rb#189
     def lazily_load_schema_cache; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#183
+    # source://activerecord/8.0.2/lib/active_record.rb#189
     def lazily_load_schema_cache=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#245
-    def legacy_connection_handling=(_); end
-
-    # source://activerecord/7.1.5.1/lib/active_record.rb#308
+    # source://activerecord/8.0.2/lib/active_record.rb#339
     def maintain_test_schema; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#308
+    # source://activerecord/8.0.2/lib/active_record.rb#339
     def maintain_test_schema=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#457
+    # source://activerecord/8.0.2/lib/active_record.rb#463
     def marshalling_format_version; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#461
+    # source://activerecord/8.0.2/lib/active_record.rb#467
     def marshalling_format_version=(value); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#373
+    # source://activerecord/8.0.2/lib/active_record.rb#400
     def migration_strategy; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#373
+    # source://activerecord/8.0.2/lib/active_record.rb#400
     def migration_strategy=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#425
+    # source://activerecord/8.0.2/lib/active_record.rb#311
+    def permanent_connection_checkout; end
+
+    # source://activerecord/8.0.2/lib/active_record.rb#314
+    def permanent_connection_checkout=(value); end
+
+    # source://activerecord/8.0.2/lib/active_record.rb#490
+    def protocol_adapters; end
+
+    # source://activerecord/8.0.2/lib/active_record.rb#490
+    def protocol_adapters=(_arg0); end
+
+    # source://activerecord/8.0.2/lib/active_record.rb#431
     def query_transformers; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#425
+    # source://activerecord/8.0.2/lib/active_record.rb#431
     def query_transformers=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#305
+    # source://activerecord/8.0.2/lib/active_record.rb#336
     def queues; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#305
+    # source://activerecord/8.0.2/lib/active_record.rb#336
     def queues=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#440
+    # source://activerecord/8.0.2/lib/active_record.rb#446
     def raise_int_wider_than_64bit; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#440
+    # source://activerecord/8.0.2/lib/active_record.rb#446
     def raise_int_wider_than_64bit=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#311
+    # source://activerecord/8.0.2/lib/active_record.rb#342
     def raise_on_assign_to_attr_readonly; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#311
+    # source://activerecord/8.0.2/lib/active_record.rb#342
     def raise_on_assign_to_attr_readonly=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#242
+    # source://activerecord/8.0.2/lib/active_record.rb#268
     def reading_role; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#242
+    # source://activerecord/8.0.2/lib/active_record.rb#268
     def reading_role=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#320
+    # source://activerecord/8.0.2/lib/active_record.rb#351
     def run_after_transaction_callbacks_in_order_defined; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#320
+    # source://activerecord/8.0.2/lib/active_record.rb#351
     def run_after_transaction_callbacks_in_order_defined=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#189
+    # source://activerecord/8.0.2/lib/active_record.rb#205
+    def schema_cache_ignored_table?(table_name); end
+
+    # source://activerecord/8.0.2/lib/active_record.rb#197
     def schema_cache_ignored_tables; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#189
+    # source://activerecord/8.0.2/lib/active_record.rb#197
     def schema_cache_ignored_tables=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#353
+    # source://activerecord/8.0.2/lib/active_record.rb#372
     def schema_format; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#353
+    # source://activerecord/8.0.2/lib/active_record.rb#372
     def schema_format=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#395
-    def suppress_multiple_database_warning; end
-
-    # source://activerecord/7.1.5.1/lib/active_record.rb#402
-    def suppress_multiple_database_warning=(value); end
-
-    # source://activerecord/7.1.5.1/lib/active_record.rb#367
+    # source://activerecord/8.0.2/lib/active_record.rb#386
     def timestamped_migrations; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#367
+    # source://activerecord/8.0.2/lib/active_record.rb#386
     def timestamped_migrations=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#432
+    # source://activerecord/8.0.2/lib/active_record.rb#438
     def use_yaml_unsafe_load; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#432
+    # source://activerecord/8.0.2/lib/active_record.rb#438
     def use_yaml_unsafe_load=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#298
+    # source://activerecord/8.0.2/lib/active_record.rb#394
+    def validate_migration_timestamps; end
+
+    # source://activerecord/8.0.2/lib/active_record.rb#394
+    def validate_migration_timestamps=(_arg0); end
+
+    # source://activerecord/8.0.2/lib/active_record.rb#329
     def verbose_query_logs; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#298
+    # source://activerecord/8.0.2/lib/active_record.rb#329
     def verbose_query_logs=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#415
+    # source://activerecord/8.0.2/lib/active_record.rb#428
     def verify_foreign_keys_for_fixtures; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#415
+    # source://activerecord/8.0.2/lib/active_record.rb#428
     def verify_foreign_keys_for_fixtures=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record/version.rb#7
+    # source://activerecord/8.0.2/lib/active_record/version.rb#7
     def version; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#332
-    def warn_on_records_fetched_greater_than; end
-
-    # source://activerecord/7.1.5.1/lib/active_record.rb#332
-    def warn_on_records_fetched_greater_than=(_arg0); end
-
-    # source://activerecord/7.1.5.1/lib/active_record.rb#239
+    # source://activerecord/8.0.2/lib/active_record.rb#265
     def writing_role; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#239
+    # source://activerecord/8.0.2/lib/active_record.rb#265
     def writing_role=(_arg0); end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#447
+    # source://activerecord/8.0.2/lib/active_record.rb#453
     def yaml_column_permitted_classes; end
 
-    # source://activerecord/7.1.5.1/lib/active_record.rb#447
+    # source://activerecord/8.0.2/lib/active_record.rb#453
     def yaml_column_permitted_classes=(_arg0); end
   end
 end
@@ -504,13 +510,13 @@ class ActiveRecord::TypedStore::TypedHash < ::ActiveSupport::HashWithIndifferent
   def []=(key, value); end
 
   # source://activerecord-typedstore//lib/active_record/typed_store/typed_hash.rb#47
-  def defaults_hash(&block); end
+  def defaults_hash(&_arg0); end
 
   # source://activerecord-typedstore//lib/active_record/typed_store/typed_hash.rb#21
   def except(*_arg0, **_arg1, &_arg2); end
 
   # source://activerecord-typedstore//lib/active_record/typed_store/typed_hash.rb#47
-  def fields(&block); end
+  def fields(&_arg0); end
 
   # source://activerecord-typedstore//lib/active_record/typed_store/typed_hash.rb#34
   def merge!(other_hash); end

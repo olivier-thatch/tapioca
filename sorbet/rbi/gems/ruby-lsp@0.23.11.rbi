@@ -447,7 +447,7 @@ class RubyIndexer::Entry
 
   # @return [RubyIndexer::Location]
   #
-  # source://sorbet-runtime/0.5.11856/lib/types/private/methods/_methods.rb#257
+  # source://sorbet-runtime/0.5.11911/lib/types/private/methods/_methods.rb#257
   def name_location(*args, **_arg1, &blk); end
 
   # source://ruby-lsp//lib/ruby_indexer/lib/ruby_indexer/entry.rb#57
@@ -820,7 +820,7 @@ class RubyIndexer::Entry::Parameter
   #
   # @return [Symbol]
   #
-  # source://sorbet-runtime/0.5.11856/lib/types/private/methods/_methods.rb#257
+  # source://sorbet-runtime/0.5.11911/lib/types/private/methods/_methods.rb#257
   def decorated_name(*args, **_arg1, &blk); end
 
   # Name includes just the name of the parameter, excluding symbols like splats
@@ -5866,7 +5866,7 @@ class RubyLsp::ResponseBuilders::DocumentSymbol < ::RubyLsp::ResponseBuilders::R
   # @param symbol [Interface::DocumentSymbol]
   # @return [void]
   #
-  # source://sorbet-runtime/0.5.11856/lib/types/private/methods/_methods.rb#257
+  # source://sorbet-runtime/0.5.11911/lib/types/private/methods/_methods.rb#257
   def <<(*args, **_arg1, &blk); end
 
   # source://ruby-lsp//lib/ruby_lsp/response_builders/document_symbol.rb#47
@@ -6354,7 +6354,7 @@ class RubyLsp::Server < ::RubyLsp::BaseServer
   # @param message [Hash{Symbol => T.untyped}]
   # @return [void]
   #
-  # source://sorbet-runtime/0.5.11856/lib/types/private/methods/_methods.rb#257
+  # source://sorbet-runtime/0.5.11911/lib/types/private/methods/_methods.rb#257
   def text_document_code_lens(*args, **_arg1, &blk); end
 
   # source://ruby-lsp//lib/ruby_lsp/server.rb#918
@@ -6392,19 +6392,19 @@ class RubyLsp::Server < ::RubyLsp::BaseServer
   # @param message [Hash{Symbol => T.untyped}]
   # @return [void]
   #
-  # source://sorbet-runtime/0.5.11856/lib/types/private/methods/_methods.rb#257
+  # source://sorbet-runtime/0.5.11911/lib/types/private/methods/_methods.rb#257
   def text_document_document_link(*args, **_arg1, &blk); end
 
   # @param message [Hash{Symbol => T.untyped}]
   # @return [void]
   #
-  # source://sorbet-runtime/0.5.11856/lib/types/private/methods/_methods.rb#257
+  # source://sorbet-runtime/0.5.11911/lib/types/private/methods/_methods.rb#257
   def text_document_document_symbol(*args, **_arg1, &blk); end
 
   # @param message [Hash{Symbol => T.untyped}]
   # @return [void]
   #
-  # source://sorbet-runtime/0.5.11856/lib/types/private/methods/_methods.rb#257
+  # source://sorbet-runtime/0.5.11911/lib/types/private/methods/_methods.rb#257
   def text_document_folding_range(*args, **_arg1, &blk); end
 
   # source://ruby-lsp//lib/ruby_lsp/server.rb#625
@@ -6698,14 +6698,14 @@ class URI::Source < ::URI::File
   sig { params(v: T.nilable(::String)).returns(T::Boolean) }
   def check_host(v); end
 
-  # source://uri/0.13.0/lib/uri/generic.rb#243
+  # source://uri/0.13.2/lib/uri/generic.rb#243
   def gem_name; end
 
   # source://ruby-lsp//lib/ruby_lsp/requests/support/source_uri.rb#33
   sig { returns(T.nilable(::String)) }
   def gem_version; end
 
-  # source://uri/0.13.0/lib/uri/generic.rb#283
+  # source://uri/0.13.2/lib/uri/generic.rb#283
   def line_number; end
 
   # source://ruby-lsp//lib/ruby_lsp/requests/support/source_uri.rb#59

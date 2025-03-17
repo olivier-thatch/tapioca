@@ -213,6 +213,20 @@ class ActiveResource::Associations::Builder::Association
 
     # source://activeresource//lib/active_resource/associations/builder/association.rb#6
     def valid_options?; end
+
+    private
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_macro; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_macro=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_valid_options; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_valid_options=(new_value); end
   end
 end
 
@@ -222,11 +236,19 @@ class ActiveResource::Associations::Builder::BelongsTo < ::ActiveResource::Assoc
   def build; end
 
   class << self
-    # source://activeresource//lib/active_resource/associations/builder/association.rb#10
-    def macro; end
+    private
 
-    # source://activeresource//lib/active_resource/associations/builder/association.rb#6
-    def valid_options; end
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_macro; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_macro=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_valid_options; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_valid_options=(new_value); end
   end
 end
 
@@ -236,8 +258,13 @@ class ActiveResource::Associations::Builder::HasMany < ::ActiveResource::Associa
   def build; end
 
   class << self
-    # source://activeresource//lib/active_resource/associations/builder/association.rb#10
-    def macro; end
+    private
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_macro; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_macro=(new_value); end
   end
 end
 
@@ -247,8 +274,13 @@ class ActiveResource::Associations::Builder::HasOne < ::ActiveResource::Associat
   def build; end
 
   class << self
-    # source://activeresource//lib/active_resource/associations/builder/association.rb#10
-    def macro; end
+    private
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_macro; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_macro=(new_value); end
   end
 end
 
@@ -621,11 +653,8 @@ class ActiveResource::Base
   # source://activeresource//lib/active_resource/base.rb#1318
   def ==(other); end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#70
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#69
   def __callbacks; end
-
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#70
-  def __callbacks?; end
 
   # source://activeresource//lib/active_resource/base.rb#331
   def _collection_parser; end
@@ -636,10 +665,10 @@ class ActiveResource::Base
   # source://activeresource//lib/active_resource/base.rb#331
   def _collection_parser?; end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#963
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#924
   def _create_callbacks; end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#963
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#924
   def _destroy_callbacks; end
 
   # source://activeresource//lib/active_resource/base.rb#330
@@ -651,40 +680,40 @@ class ActiveResource::Base
   # source://activeresource//lib/active_resource/base.rb#330
   def _format?; end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#951
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#912
   def _run_create_callbacks(&block); end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#951
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#912
   def _run_destroy_callbacks(&block); end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#951
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#912
   def _run_save_callbacks(&block); end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#951
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#912
   def _run_update_callbacks(&block); end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#951
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#912
   def _run_validate_callbacks(&block); end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#951
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#912
   def _run_validation_callbacks(&block); end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#963
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#924
   def _save_callbacks; end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#963
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#924
   def _update_callbacks; end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#963
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#924
   def _validate_callbacks; end
 
-  # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#963
+  # source://activesupport/8.0.2/lib/active_support/callbacks.rb#924
   def _validation_callbacks; end
 
-  # source://activemodel/7.1.5.1/lib/active_model/validations.rb#71
+  # source://activemodel/8.0.2/lib/active_model/validations.rb#50
   def _validators; end
 
-  # source://activemodel/7.1.5.1/lib/active_model/validations.rb#71
+  # source://activemodel/8.0.2/lib/active_model/validations.rb#50
   def _validators?; end
 
   # source://activeresource//lib/active_resource/base.rb#1184
@@ -819,10 +848,10 @@ class ActiveResource::Base
   # source://activeresource//lib/active_resource/base.rb#332
   def include_format_in_path?; end
 
-  # source://activemodel/7.1.5.1/lib/active_model/serializers/json.rb#15
+  # source://activemodel/8.0.2/lib/active_model/serializers/json.rb#15
   def include_root_in_json; end
 
-  # source://activemodel/7.1.5.1/lib/active_model/serializers/json.rb#15
+  # source://activemodel/8.0.2/lib/active_model/serializers/json.rb#15
   def include_root_in_json?; end
 
   # This is a list of known attributes for this resource. Either
@@ -863,8 +892,8 @@ class ActiveResource::Base
   # source://activeresource//lib/active_resource/base.rb#323
   def logger; end
 
-  # source://activemodel/7.1.5.1/lib/active_model/naming.rb#255
-  def model_name(&block); end
+  # source://activemodel/8.0.2/lib/active_model/naming.rb#255
+  def model_name(&_arg0); end
 
   # Returns +true+ if this object hasn't yet been saved, otherwise, returns +false+.
   #
@@ -900,7 +929,7 @@ class ActiveResource::Base
   # source://activeresource//lib/active_resource/base.rb#1265
   def new_record?; end
 
-  # source://activemodel/7.1.5.1/lib/active_model/conversion.rb#32
+  # source://activemodel/8.0.2/lib/active_model/conversion.rb#32
   def param_delimiter=(_arg0); end
 
   # Returns +true+ if this object has been saved, otherwise returns +false+.
@@ -1035,9 +1064,6 @@ class ActiveResource::Base
   # source://activeresource//lib/active_resource/base.rb#1532
   def update_attributes(attributes); end
 
-  # source://activemodel/7.1.5.1/lib/active_model/validations.rb#67
-  def validation_context; end
-
   protected
 
   # source://activeresource//lib/active_resource/base.rb#1623
@@ -1123,18 +1149,12 @@ class ActiveResource::Base
   # source://activeresource//lib/active_resource/base.rb#1697
   def split_options(options = T.unsafe(nil)); end
 
-  # source://activemodel/7.1.5.1/lib/active_model/validations.rb#67
-  def validation_context=(_arg0); end
-
   class << self
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#70
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#69
     def __callbacks; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#70
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#69
     def __callbacks=(value); end
-
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#70
-    def __callbacks?; end
 
     # source://activeresource//lib/active_resource/threadsafe_attributes.rb#15
     def _bearer_token; end
@@ -1163,16 +1183,16 @@ class ActiveResource::Base
     # source://activeresource//lib/active_resource/threadsafe_attributes.rb#23
     def _connection_defined?; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#955
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#916
     def _create_callbacks; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#959
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#920
     def _create_callbacks=(value); end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#955
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#916
     def _destroy_callbacks; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#959
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#920
     def _destroy_callbacks=(value); end
 
     # source://activeresource//lib/active_resource/base.rb#330
@@ -1211,10 +1231,10 @@ class ActiveResource::Base
     # source://activeresource//lib/active_resource/threadsafe_attributes.rb#23
     def _proxy_defined?; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#955
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#916
     def _save_callbacks; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#959
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#920
     def _save_callbacks=(value); end
 
     # source://activeresource//lib/active_resource/threadsafe_attributes.rb#15
@@ -1226,10 +1246,10 @@ class ActiveResource::Base
     # source://activeresource//lib/active_resource/threadsafe_attributes.rb#23
     def _site_defined?; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#955
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#916
     def _update_callbacks; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#959
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#920
     def _update_callbacks=(value); end
 
     # source://activeresource//lib/active_resource/threadsafe_attributes.rb#15
@@ -1241,37 +1261,37 @@ class ActiveResource::Base
     # source://activeresource//lib/active_resource/threadsafe_attributes.rb#23
     def _user_defined?; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#955
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#916
     def _validate_callbacks; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#959
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#920
     def _validate_callbacks=(value); end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#955
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#916
     def _validation_callbacks; end
 
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#959
+    # source://activesupport/8.0.2/lib/active_support/callbacks.rb#920
     def _validation_callbacks=(value); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/validations.rb#71
+    # source://activemodel/8.0.2/lib/active_model/validations.rb#50
     def _validators; end
 
-    # source://activemodel/7.1.5.1/lib/active_model/validations.rb#71
+    # source://activemodel/8.0.2/lib/active_model/validations.rb#50
     def _validators=(value); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/validations.rb#71
+    # source://activemodel/8.0.2/lib/active_model/validations.rb#50
     def _validators?; end
 
-    # source://activemodel/7.1.5.1/lib/active_model/callbacks.rb#144
+    # source://activemodel/8.0.2/lib/active_model/callbacks.rb#144
     def after_create(*args, **options, &block); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/callbacks.rb#144
+    # source://activemodel/8.0.2/lib/active_model/callbacks.rb#144
     def after_destroy(*args, **options, &block); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/callbacks.rb#144
+    # source://activemodel/8.0.2/lib/active_model/callbacks.rb#144
     def after_save(*args, **options, &block); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/callbacks.rb#144
+    # source://activemodel/8.0.2/lib/active_model/callbacks.rb#144
     def after_update(*args, **options, &block); end
 
     # This is an alias for find(:all). You can pass in all the same
@@ -1280,16 +1300,16 @@ class ActiveResource::Base
     # source://activeresource//lib/active_resource/base.rb#1039
     def all(*args); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/callbacks.rb#137
+    # source://activemodel/8.0.2/lib/active_model/callbacks.rb#137
     def around_create(*args, **options, &block); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/callbacks.rb#137
+    # source://activemodel/8.0.2/lib/active_model/callbacks.rb#137
     def around_destroy(*args, **options, &block); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/callbacks.rb#137
+    # source://activemodel/8.0.2/lib/active_model/callbacks.rb#137
     def around_save(*args, **options, &block); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/callbacks.rb#137
+    # source://activemodel/8.0.2/lib/active_model/callbacks.rb#137
     def around_update(*args, **options, &block); end
 
     # source://activeresource//lib/active_resource/base.rb#562
@@ -1308,16 +1328,16 @@ class ActiveResource::Base
     # source://activeresource//lib/active_resource/base.rb#557
     def bearer_token=(bearer_token); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/callbacks.rb#130
+    # source://activemodel/8.0.2/lib/active_model/callbacks.rb#130
     def before_create(*args, **options, &block); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/callbacks.rb#130
+    # source://activemodel/8.0.2/lib/active_model/callbacks.rb#130
     def before_destroy(*args, **options, &block); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/callbacks.rb#130
+    # source://activemodel/8.0.2/lib/active_model/callbacks.rb#130
     def before_save(*args, **options, &block); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/callbacks.rb#130
+    # source://activemodel/8.0.2/lib/active_model/callbacks.rb#130
     def before_update(*args, **options, &block); end
 
     # Builds a new, unsaved record using the default values from the remote server so
@@ -1633,13 +1653,13 @@ class ActiveResource::Base
     # source://activeresource//lib/active_resource/base.rb#332
     def include_format_in_path?; end
 
-    # source://activemodel/7.1.5.1/lib/active_model/serializers/json.rb#15
+    # source://activemodel/8.0.2/lib/active_model/serializers/json.rb#15
     def include_root_in_json; end
 
-    # source://activemodel/7.1.5.1/lib/active_model/serializers/json.rb#15
+    # source://activemodel/8.0.2/lib/active_model/serializers/json.rb#15
     def include_root_in_json=(value); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/serializers/json.rb#15
+    # source://activemodel/8.0.2/lib/active_model/serializers/json.rb#15
     def include_root_in_json?; end
 
     # Returns the list of known attributes for this resource, gathered
@@ -1699,13 +1719,13 @@ class ActiveResource::Base
     # source://activeresource//lib/active_resource/base.rb#1063
     def orig_delete(id, options = T.unsafe(nil)); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/conversion.rb#32
+    # source://activemodel/8.0.2/lib/active_model/conversion.rb#32
     def param_delimiter; end
 
-    # source://activemodel/7.1.5.1/lib/active_model/conversion.rb#32
+    # source://activemodel/8.0.2/lib/active_model/conversion.rb#32
     def param_delimiter=(value); end
 
-    # source://activemodel/7.1.5.1/lib/active_model/conversion.rb#32
+    # source://activemodel/8.0.2/lib/active_model/conversion.rb#32
     def param_delimiter?; end
 
     # Gets the \password for REST HTTP authentication.
@@ -1948,6 +1968,60 @@ class ActiveResource::Base
 
     private
 
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr___callbacks; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr___callbacks=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr__collection_parser; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr__collection_parser=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr__format; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr__format=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr__validators; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr__validators=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_connection_class; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_connection_class=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_include_format_in_path; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_include_format_in_path=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_include_root_in_json; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_include_root_in_json=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_param_delimiter; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_param_delimiter=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_reflections; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_reflections=(new_value); end
+
     # source://activeresource//lib/active_resource/base.rb#1087
     def check_prefix_options(prefix_options); end
 
@@ -2016,12 +2090,10 @@ module ActiveResource::Callbacks
   module GeneratedClassMethods
     def __callbacks; end
     def __callbacks=(value); end
-    def __callbacks?; end
   end
 
   module GeneratedInstanceMethods
     def __callbacks; end
-    def __callbacks?; end
   end
 end
 
@@ -2233,6 +2305,9 @@ class ActiveResource::Collection
   def fetch(*_arg0, **_arg1, &_arg2); end
 
   # source://activeresource//lib/active_resource/collection.rb#10
+  def fetch_values(*_arg0, **_arg1, &_arg2); end
+
+  # source://activeresource//lib/active_resource/collection.rb#10
   def fifth(*_arg0, **_arg1, &_arg2); end
 
   # source://activeresource//lib/active_resource/collection.rb#10
@@ -2267,6 +2342,9 @@ class ActiveResource::Collection
 
   # source://activeresource//lib/active_resource/collection.rb#10
   def fourth(*_arg0, **_arg1, &_arg2); end
+
+  # source://activeresource//lib/active_resource/collection.rb#10
+  def freeze(*_arg0, **_arg1, &_arg2); end
 
   # source://activeresource//lib/active_resource/collection.rb#10
   def from(*_arg0, **_arg1, &_arg2); end
@@ -2361,6 +2439,9 @@ class ActiveResource::Collection
 
   # source://activeresource//lib/active_resource/collection.rb#10
   def prepend(*_arg0, **_arg1, &_arg2); end
+
+  # source://activeresource//lib/active_resource/collection.rb#10
+  def present?(*_arg0, **_arg1, &_arg2); end
 
   # source://activeresource//lib/active_resource/collection.rb#10
   def pretty_print(*_arg0, **_arg1, &_arg2); end
@@ -2491,9 +2572,6 @@ class ActiveResource::Collection
 
   # source://activeresource//lib/active_resource/collection.rb#10
   def to_ary(*_arg0, **_arg1, &_arg2); end
-
-  # source://activeresource//lib/active_resource/collection.rb#10
-  def to_default_s(*_arg0, **_arg1, &_arg2); end
 
   # source://activeresource//lib/active_resource/collection.rb#10
   def to_formatted_s(*_arg0, **_arg1, &_arg2); end
@@ -3885,7 +3963,6 @@ module ActiveResource::Validations
   module GeneratedClassMethods
     def __callbacks; end
     def __callbacks=(value); end
-    def __callbacks?; end
     def _validators; end
     def _validators=(value); end
     def _validators?; end
@@ -3893,7 +3970,6 @@ module ActiveResource::Validations
 
   module GeneratedInstanceMethods
     def __callbacks; end
-    def __callbacks?; end
     def _validators; end
     def _validators?; end
   end
