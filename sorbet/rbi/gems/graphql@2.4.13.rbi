@@ -20039,18 +20039,29 @@ class Graphql::Dashboard::ApplicationController < ::ActionController::Base
 
   private
 
-  # source://actionview/7.1.5.1/lib/action_view/layouts.rb#330
-  def _layout(lookup_context, formats); end
+  # source://actionview/8.0.2/lib/action_view/layouts.rb#328
+  def _layout(lookup_context, formats, keys); end
 
   class << self
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#70
-    def __callbacks; end
+    private
 
-    # source://actionpack/7.1.5.1/lib/abstract_controller/helpers.rb#12
-    def _helper_methods; end
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr___callbacks; end
 
-    # source://actionpack/7.1.5.1/lib/action_controller/metal.rb#262
-    def middleware_stack; end
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr___callbacks=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr__helper_methods; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr__helper_methods=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_middleware_stack; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_middleware_stack=(new_value); end
   end
 end
 
@@ -20061,7 +20072,7 @@ module Graphql::Dashboard::ApplicationController::HelperMethods
   include ::ActionController::Base::HelperMethods
 
   # source://graphql//lib/graphql/dashboard.rb#75
-  def schema_class(*args, **_arg1, &block); end
+  def schema_class(*_arg0, **_arg1, &_arg2); end
 end
 
 # source://graphql//lib/graphql/dashboard.rb#78
@@ -20071,12 +20082,17 @@ class Graphql::Dashboard::LandingsController < ::Graphql::Dashboard::Application
 
   private
 
-  # source://actionview/7.1.5.1/lib/action_view/layouts.rb#330
-  def _layout(lookup_context, formats); end
+  # source://actionview/8.0.2/lib/action_view/layouts.rb#328
+  def _layout(lookup_context, formats, keys); end
 
   class << self
-    # source://actionpack/7.1.5.1/lib/action_controller/metal.rb#262
-    def middleware_stack; end
+    private
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_middleware_stack; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_middleware_stack=(new_value); end
   end
 end
 
@@ -20087,15 +20103,23 @@ class Graphql::Dashboard::StaticsController < ::Graphql::Dashboard::ApplicationC
 
   private
 
-  # source://actionview/7.1.5.1/lib/action_view/layouts.rb#330
-  def _layout(lookup_context, formats); end
+  # source://actionview/8.0.2/lib/action_view/layouts.rb#328
+  def _layout(lookup_context, formats, keys); end
 
   class << self
-    # source://activesupport/7.1.5.1/lib/active_support/callbacks.rb#70
-    def __callbacks; end
+    private
 
-    # source://actionpack/7.1.5.1/lib/action_controller/metal.rb#262
-    def middleware_stack; end
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr___callbacks; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr___callbacks=(new_value); end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_middleware_stack; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_middleware_stack=(new_value); end
   end
 end
 
@@ -20120,11 +20144,16 @@ class Graphql::Dashboard::TracesController < ::Graphql::Dashboard::ApplicationCo
 
   private
 
-  # source://actionview/7.1.5.1/lib/action_view/layouts.rb#330
-  def _layout(lookup_context, formats); end
+  # source://actionview/8.0.2/lib/action_view/layouts.rb#328
+  def _layout(lookup_context, formats, keys); end
 
   class << self
-    # source://actionpack/7.1.5.1/lib/action_controller/metal.rb#262
-    def middleware_stack; end
+    private
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#15
+    def __class_attr_middleware_stack; end
+
+    # source://activesupport/8.0.2/lib/active_support/class_attribute.rb#17
+    def __class_attr_middleware_stack=(new_value); end
   end
 end

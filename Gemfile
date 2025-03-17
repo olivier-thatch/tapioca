@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 gemspec
 
-CURRENT_RAILS_VERSION = "7.1"
+CURRENT_RAILS_VERSION = "8.0"
 rails_version = ENV.fetch("RAILS_VERSION", CURRENT_RAILS_VERSION)
 
 gem "minitest"
